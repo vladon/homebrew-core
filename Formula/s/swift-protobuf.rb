@@ -7,6 +7,7 @@ class SwiftProtobuf < Formula
       tag:      "1.34.1",
       revision: "c5ab62237f21cad094812719a1bbe29443407c5f"
   license "Apache-2.0"
+  revision 1
   head "https://github.com/apple/swift-protobuf.git", branch: "main"
 
   livecheck do
