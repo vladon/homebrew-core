@@ -30,10 +30,13 @@ class GerbilScheme < Formula
   depends_on "openssl@3"
 
   uses_from_macos "sqlite"
-  uses_from_macos "zlib"
 
   on_macos do
     depends_on "gcc"
+  end
+
+  on_linux do
+    depends_on "zlib-ng-compat"
   end
 
   conflicts_with "ghostscript", because: "both install `gsc` binary"
