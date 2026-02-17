@@ -27,14 +27,13 @@ class Katago < Formula
   depends_on "cmake" => :build
   depends_on "libzip"
 
-  uses_from_macos "zlib"
-
   on_macos do
     depends_on "ninja" => :build
   end
 
   on_linux do
     depends_on "eigen" => :build
+    depends_on "zlib-ng-compat"
   end
 
   # Using most recent b18c384nbt rather than strongest as it is easier to track
