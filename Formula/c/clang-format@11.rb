@@ -5,7 +5,9 @@ class ClangFormatAT11 < Formula
   sha256 "ce8508e318a01a63d4e8b3090ab2ded3c598a50258cc49e2625b9120d4c03ea5"
   license "Apache-2.0"
 
-  no_autobump! because: :requires_manual_review
+  livecheck do
+    skip "No longer developed"
+  end
 
   bottle do
     rebuild 1
